@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu propina</title>
+</head>
+
+<body>
+
+    <h1>Calculadora de propinas</h1>
+    <p>Ingrese el costo de su compra: $</p>
+    <input type="text" id="plata"> <br>
+    <p>Porcentaje de propina:</p>
+    <input type="range" min="0" max="100" value="0" step="1" onchange="calculadoraPropina(this.value, 'plata')"
+        style="width: 400px;">
+    <span id="deslival">0</span>
+    <h2>Propina A dejar = <span id="propina"></span></h2>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
